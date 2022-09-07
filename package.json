@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "alita build",
+    "dev": "alita dev",
+    "f2elint-fix": "f2elint fix",
+    "f2elint-scan": "f2elint scan",
+    "plugin": "alita plugin list",
+    "start": "alita dev",
+    "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "f2elint commit-file-scan",
+      "commit-msg": "f2elint commit-msg-scan"
+    }
+  },
+  "dependencies": {
+    "alita": "^3.0.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13",
+    "@types/jest": "^27",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@umijs/plugins": "4.0.0-canary.20220819.1",
+    "f2elint": "^2.2.1",
+    "jest": "^27",
+    "tailwindcss": "^3.1.8",
+    "ts-node": "^10",
+    "typescript": "^4"
+  },
+  "engines": {
+    "node": ">=14.0.1"
+  }
+}
