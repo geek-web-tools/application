@@ -9,27 +9,25 @@ const Home = () => {
             <div className="mb-4">
               <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full">
                 <p className="font-bold text-md text-black dark:text-white">{nav.type}</p>
-                <ul className="flex flex-col flex-wrap sm:flex-row ">
+                <ul className="flex flex-col flex-wrap sm:flex-row justify-start gap-4">
                   {nav.children.map((item) => {
                     return (
                       <li
-                        className="sm:w-1/2 xl:w-1/3 flex items-center my-6 space-x-2"
+                        className=" w-72 flex items-start justify-start my-4 space-x-2"
                         key={item.title}
                       >
-                        <div className="flex items-center">
-                          <img
-                            alt={item.desc}
-                            src={item.logo}
-                            className="rounded-xl relative p-1 w-10 h-10 inline-block bg-blue-100"
-                          />
-                          <div className="flex flex-col">
-                            <span className="font-bold text-md text-black dark:text-white ml-2">
-                              {item.title}
-                            </span>
-                            <span className="text-sm text-gray-500 dark:text-white ml-2">
-                              {item.desc}
-                            </span>
-                          </div>
+                        <img
+                          alt={item.desc}
+                          src={item.logo}
+                          className="rounded-xl w-10 h-10 inline-block bg-blue-100"
+                        />
+                        <div className="flex flex-col">
+                          <span className="font-bold text-md text-black dark:text-white ml-2">
+                            {item.title}
+                          </span>
+                          <span className="text-sm text-gray-500 dark:text-white ml-2">
+                            {item.desc}
+                          </span>
                         </div>
                         {/* <a href="#" className="block relative">
                           <img
