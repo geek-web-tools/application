@@ -1,7 +1,7 @@
 import { useBoolean, useLocalStorageState } from 'ahooks';
 import { useEffect } from 'react';
 import Card from '../Card';
-import { modeList, themeList } from './config';
+import { modeList, themeList } from '@/data/config';
 
 const ThemeSettings = () => {
   const [widget, { toggle }] = useBoolean(false);
@@ -57,6 +57,7 @@ const ThemeSettings = () => {
           <div className="flex flex-row gap-6">
             {modeList.map((item) => (
               <button
+                key={item.mode}
                 className="flex flex-col items-center w-auto text-black dark:text-white"
                 onClick={() => {
                   setSettings({
@@ -86,6 +87,7 @@ const ThemeSettings = () => {
           <div className="flex flex-row flex-wrap gap-4">
             {themeList.map((item) => (
               <button
+                key={item.theme}
                 className="flex flex-col items-center w-auto text-black dark:text-white"
                 onClick={() => {
                   setSettings({
@@ -100,7 +102,7 @@ const ThemeSettings = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className={`w-8 h-8 p-1 mb-1 rounded-full bg-gradient-to-r ${item.className} text-white`}
+                  className={`w-8 h-8 p-1 mb-1 rounded-full bg-${item.theme} text-white`}
                 >
                   {settings.theme === item.theme && (
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />

@@ -216,3 +216,54 @@
     --primary-color-900: theme('colors.rose.900');
   }
 }
+.bg-red {
+  @apply bg-gradient-to-r from-red-400 to-red-500;
+}
+.bg-orange {
+  @apply bg-gradient-to-r from-orange-400 to-orange-500;
+}
+.bg-amber {
+  @apply bg-gradient-to-r from-amber-400 to-amber-500;
+}
+.bg-yellow {
+  @apply bg-gradient-to-r from-yellow-400 to-yellow-500;
+}
+.bg-lime {
+  @apply bg-gradient-to-r from-lime-400 to-lime-500;
+}
+.bg-green {
+  @apply bg-gradient-to-r from-green-400 to-green-500;
+}
+.bg-emerald {
+  @apply bg-gradient-to-r from-emerald-400 to-emerald-500;
+}
+.bg-teal {
+  @apply bg-gradient-to-r from-teal-400 to-teal-500;
+}
+.bg-cyan {
+  @apply bg-gradient-to-r from-cyan-400 to-cyan-500;
+}
+.bg-sky {
+  @apply bg-gradient-to-r from-sky-400 to-sky-500;
+}
+.bg-blue {
+  @apply bg-gradient-to-r from-blue-400 to-blue-500;
+}
+.bg-indigo {
+  @apply bg-gradient-to-r from-indigo-400 to-indigo-500;
+}
+.bg-violet {
+  @apply bg-gradient-to-r from-violet-400 to-violet-500;
+}
+.bg-purple {
+  @apply bg-gradient-to-r from-purple-400 to-purple-500;
+}
+.bg-fuchsia {
+  @apply bg-gradient-to-r from-fuchsia-400 to-fuchsia-500;
+}
+.bg-pink {
+  @apply bg-gradient-to-r from-pink-400 to-pink-500;
+}
+.bg-rose {
+  @apply bg-gradient-to-r from-rose-400 to-rose-500;
+}

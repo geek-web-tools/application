@@ -18,87 +18,70 @@ export const modeList = [
 export const themeList = [
   {
     theme: 'red',
-    className: `from-red-400 to-red-500`,
     name: '浪漫红',
   },
   {
     theme: 'orange',
-    className: `from-orange-400 to-orange-500`,
     name: '活力橙',
   },
   {
     theme: 'amber',
-    className: `from-amber-400 to-amber-500`,
     name: '日落黄',
   },
   {
     theme: 'yellow',
-    className: `from-yellow-400 to-yellow-500`,
     name: '柠檬黄',
   },
   {
     theme: 'lime',
-    className: `from-lime-400 to-lime-500`,
     name: '新生绿',
   },
   {
     theme: 'green',
-    className: `from-green-400 to-green-500`,
     name: '仙野绿',
   },
   {
     theme: 'emerald',
-    className: `from-emerald-400 to-emerald-500`,
     name: '翡翠绿',
   },
   {
     theme: 'teal',
-    className: `from-teal-400 to-teal-500`,
     name: '水鸭青',
   },
   {
     theme: 'cyan',
-    className: `from-cyan-400 to-cyan-500`,
     name: '碧涛青',
   },
   {
     theme: 'sky',
-    className: `from-sky-400 to-sky-500`,
     name: '天空蓝',
   },
   {
     theme: 'blue',
-    className: `from-blue-400 to-blue-500`,
     name: '海蔚蓝',
   },
   {
     theme: 'indigo',
-    className: `from-indigo-400 to-indigo-500`,
     name: '靛蓝青',
   },
   {
     theme: 'violet',
-    className: `from-violet-400 to-violet-500`,
     name: '罗兰紫',
   },
   {
     theme: 'purple',
-    className: `from-purple-400 to-purple-500`,
     name: '暗夜紫',
   },
   {
     theme: 'fuchsia',
-    className: `from-fuchsia-400 to-fuchsia-500`,
     name: '青春紫',
   },
   {
     theme: 'pink',
-    className: `from-pink-400 to-pink-500`,
     name: '猛男粉',
   },
   {
     theme: 'rose',
-    className: `from-rose-400 to-rose-500`,
     name: '玫瑰红',
   },
 ];
