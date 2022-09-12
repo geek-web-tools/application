@@ -8,41 +8,33 @@ function getRandom(n: number, m: number) {
 }
 
 const Lucky = () => {
-  const [slots] = useState([{ speed: 20 }, { speed: 52, direction: -1 }, { speed: 30 }]);
-
   const [prizes] = useState([
     {
-      fonts: [{ text: '凉拌荆芥', fontColor: '#fff', top: 140 }],
+      fonts: [{ text: '豆角炒肉', fontColor: '#fff', top: 130 }],
     },
     {
-      fonts: [{ text: '豆角炒肉', fontColor: '#fff', top: 140 }],
+      fonts: [{ text: '羊肉饺子', fontColor: '#fff', top: 130 }],
     },
     {
-      fonts: [{ text: '羊肉饺子', fontColor: '#fff', top: 140 }],
+      fonts: [{ text: '西红柿鸡蛋面', fontColor: '#fff', top: 130 }],
     },
     {
-      fonts: [{ text: '西红柿鸡蛋面', fontColor: '#fff', top: 140 }],
+      fonts: [{ text: '土豆鸡块', fontColor: '#fff', top: 130 }],
     },
     {
-      fonts: [{ text: '土豆鸡块', fontColor: '#fff', top: 140 }],
+      fonts: [{ text: '牛腩面', fontColor: '#fff', top: 130 }],
     },
     {
-      fonts: [{ text: '牛腩面', fontColor: '#fff', top: 140 }],
+      fonts: [{ text: '小蛋糕', fontColor: '#fff', top: 130 }],
     },
     {
-      fonts: [{ text: '小蛋糕', fontColor: '#fff', top: 140 }],
+      fonts: [{ text: '披萨', fontColor: '#fff', top: 130 }],
     },
     {
-      fonts: [{ text: '烤鱼', fontColor: '#fff', top: 140 }],
+      fonts: [{ text: '麻辣香锅', fontColor: '#fff', top: 130 }],
     },
     {
-      fonts: [{ text: '披萨', fontColor: '#fff', top: 140 }],
-    },
-    {
-      fonts: [{ text: '麻辣香锅', fontColor: '#fff', top: 140 }],
-    },
-    {
-      fonts: [{ text: '小龙虾', fontColor: '#fff', top: 140 }],
+      fonts: [{ text: '披萨', fontColor: '#fff', top: 130 }],
     },
   ]);
 
@@ -51,8 +43,14 @@ const Lucky = () => {
   return (
     <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full flex flex-col items-center justify-center ">
       <p className="font-bold text-md text-black dark:text-white">今天吃什么？</p>
-      <div className="bg-primary-500 rounded-2xl my-4 ">
-        <SlotMachine ref={myLucky} width="300px" height="300px" slots={slots} prizes={prizes} />
+      <div className="bg-primary-500 rounded-2xl my-4">
+        <SlotMachine
+          ref={myLucky}
+          width="300px"
+          height="300px"
+          slots={[{ speed: 20 }, { speed: 52, direction: -1 }, { speed: 30 }]}
+          prizes={prizes}
+        />
       </div>
       <div className="flex gap-4">
         <button
